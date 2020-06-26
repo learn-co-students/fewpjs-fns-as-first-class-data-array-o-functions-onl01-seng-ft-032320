@@ -32,8 +32,8 @@ const routine = [
 ];
 
 function exerciseDog(dogName, dogBreed) {
-  let messages = routine.map(function (exerciseDog) {
-    return exerciseDog(dogName, dogBreed);
+  let messages = routine.map(function (fn) {
+    return fn(dogName, dogBreed);
   });
   return messages;
 }
